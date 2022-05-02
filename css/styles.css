@@ -1,0 +1,178 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+  /* 7 % top bottom, 15% left right */
+}
+
+/* SECTIONS */
+.colored-section {
+  background-color: #FF4C68;
+  color: #FFF;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/*NAV BAR*/
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  /* 0 top bot 18px left right */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* 0 Download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* NO SPACE BETWEEN, READ LEFT TO RIGHT! */
+/* "h1#title" would be h1 that has an Id of title */
+
+/* RIGHT TO LEFT */
+/* ELEMENT (child) THAT HAS A CLASS OF CONTAINER FLUID, THAT IS INSIDE the PARENT #title */
+#title .container-fluid { /* Overrides in title section */
+  padding: 3% 15% 7%; /* 3% top 15% left and right 7 % bottom */
+  text-align: left;
+}
+
+/* Title Image */
+.title-image {
+  width: 25%;
+  transform: rotate(25deg);
+  position: absolute;
+  /* so z-index get activated, wont work with static */
+  left: 57%;
+}
+
+/* Features Section */
+#features {
+  /* to make phone disapear behind background */
+  position: relative;
+  /* to have a position, not out of html flow, and to be able to give z-index */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 2rem;
+  transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+  color: #FF4C68;
+  transform: scale(1.2);
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+  /* 20px top 20px left and right 50px bottom */
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+}
+
+.price-text {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 4% 2%;
+  /* 3 % top and bottom and 2% left and right */
+}
+
+.social-icon {
+  margin: 20px 15px;
+  /* 20px top bot 10 px left and right */
+}
+
+/* MEDIA RESPONSIVENESS */
+/* at screen width 1028px we will make this changes below */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    width: 50%;
+    transform: rotate(0);
+    margin-top: 4%;
+  }
+}
